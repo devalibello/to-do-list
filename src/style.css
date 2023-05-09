@@ -1,0 +1,91 @@
+* {
+  list-style-type: none;
+}
+
+.main-body {
+  background-color: white;
+  width: 90%;
+}
+
+.to-do-heading {
+  text-align: center;
+}
+
+.main-layout {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.today-to-do {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.horizontal-line {
+  border: 2px solid green;
+  width: 99.1%;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: #f1f2f5;
+  text-align: center;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.add-item {
+  border: none;
+  padding: 15px;
+}
+
+.add-item:focus {
+  outline: none;
+}
+
+.form-items {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.return-key {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.list-items {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0 15px;
+  gap: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: 15px;
+}
+
+.list-items:last-of-type {
+  margin-bottom: 0;
+}
+
+.ellipse {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+button {
+  width: 100%;
+  border: none;
+  outline: none;
+  appearance: none;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: rgb(224, 224, 224);
+  color: #5d5f66;
+  cursor: pointer;
+}
