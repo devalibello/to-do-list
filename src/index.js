@@ -1,4 +1,4 @@
-import './style.css';
+// import './style.css';
 
 const toDoContainer = document.getElementById('todolist');
 const itemInput = document.getElementById('input-item');
@@ -54,10 +54,18 @@ class Books {
 const books = new Books();
 books.updateToDoList();
 
+itemInput.addEventListener('focusout', () => {
+  const newTask = new Tasks(itemInput.value, books.toDoTasks.length + 1);
+  books.addEntry(newTask);
+  itemInput.value = '';
+});
+
 itemInput.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
+    e.preventDefault();
     const newTask = new Tasks(itemInput.value, books.toDoTasks.length + 1);
     books.addEntry(newTask);
+    itemInput.value = '';
   }
 });
 
