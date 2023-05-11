@@ -62,7 +62,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [To-Do List Website] <a name="about-project"></a>
 
-**[To-Do List Website]** This project was to build the structure of a To-Do List website.
+**[To-Do List Website]** This project is to build a To-Do List website.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -83,6 +83,9 @@ After you're finished please remove all the comments and instructions!
 
 - **[ The structure of the website was designed ]**
 - **[webpack is used for the implementation]**
+- **[and and remove items from the to-do list]**
+- **[mark an item as completed for deletion]**
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -177,7 +180,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add and remove books]**
+- [ ] **[Add a clear all button to delete all selected items marked as complete]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
