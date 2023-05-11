@@ -86,13 +86,11 @@ After you're finished please remove all the comments and instructions!
 - **[and and remove items from the to-do list]**
 - **[mark an item as completed for deletion]**
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Presentation <a name="Prsentation"></a>
 
-- [Presentation Link] 
+- [Presentation Link]
 
 <!-- LIVE DEMO -->
 
