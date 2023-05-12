@@ -20,7 +20,7 @@ class Books {
         toDoContainer.innerHTML += `
     <div class="list-items">
         <input type="checkbox" name="item" class="check-for-items" id="${this.toDoTasks[i].index}" onchange='ticked(${this.toDoTasks[i].index})'>
-        <input type="text" value="${this.toDoTasks[i].description}" class="todo-item-text">
+        <input type="text" value="${this.toDoTasks[i].description}" class="todo-item-text" onchange="editItem(${this.toDoTasks[i].index})" id="edit${this.toDoTasks[i].index}">
         <i class='material-icons delete-btn' onclick="removeItem(${this.toDoTasks[i].index})">delete</i>
     </div>`;
       }
@@ -47,6 +47,18 @@ class Books {
       for (let i = 0; i < this.toDoTasks.length; i += 1) {
         this.toDoTasks[i].index = i + 1;
       }
+      this.saveToDoList();
+    }
+
+    clearTicked = () => {
+      this.toDoTasks = this.toDoTasks.filter((element) => element.completed !== true);
+      this.renewIndex();
+      this.saveToDoList();
+      this.updateToDoList();
+    }
+
+    updateItem = (index, description) => {
+      this.toDoTasks[index - 1].description = description;
       this.saveToDoList();
     }
 }
@@ -77,4 +89,12 @@ window.ticked = (index) => {
 
 window.removeItem = (index) => {
   books.remove(index);
+};
+
+window.clearAll = () => {
+  books.clearTicked();
+};
+
+window.editItem = (index) => {
+  books.updateItem(index, document.getElementById(`edit${index}`).value);
 };
