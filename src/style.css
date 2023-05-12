@@ -65,17 +65,15 @@ body {
   padding: 0 15px;
   gap: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  padding-bottom: 15px;
 }
 
 .list-items:last-of-type {
   margin-bottom: 0;
 }
 
-.ellipse {
-  display: flex;
-  justify-content: flex-end;
-  flex: 1;
+.delete-btn {
+  margin-left: auto;
+  cursor: pointer;
 }
 
 button {
@@ -88,4 +86,21 @@ button {
   background-color: rgb(224, 224, 224);
   color: #5d5f66;
   cursor: pointer;
+}
+
+.todo-item-text {
+  border: none;
+  outline: none;
+  appearance: none;
+  background-color: white;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.list-items.complete {
+  opacity: 0.7;
+}
+
+.list-items.complete input[type="text"] {
+  text-decoration: line-through;
 }
