@@ -20,7 +20,7 @@ class Books {
         toDoContainer.innerHTML += `
     <div class="list-items">
         <input type="checkbox" name="item" class="check-for-items" id="${this.toDoTasks[i].index}" onchange='ticked(${this.toDoTasks[i].index})'>
-        <input type="text" value="${this.toDoTasks[i].description}" class="todo-item-text">
+        <input type="text" value="${this.toDoTasks[i].description}" class="todo-item-text edit${this.toDoTasks[i].index}" onchange="books.editList(${this.toDoTasks[i].index})">
         <i class='material-icons delete-btn' onclick="books.remove(${this.toDoTasks[i].index})">delete</i>
     </div>`;
       }
@@ -48,6 +48,18 @@ class Books {
         this.toDoTasks[i].index = i + 1;
       }
       this.saveToDoList();
+    }
+
+    clearAll = () => {
+      this.toDoTasks = this.toDoTasks.filter((element) => element.completed !== true);
+      this.renewIndex();
+      this.saveToDoList();
+      this.updateToDoList();
+    }
+
+    editList = (index) => {
+      this.toDoTasks[index - 1].description = document.getElementsByClassName(`edit${index}`).value;
+      // this.saveToDoList();
     }
 }
 
