@@ -77,4 +77,4 @@ window.ticked = (index) => {
 
 window.removeItem = (index) => {
   books.remove(index);
-  };
+};
