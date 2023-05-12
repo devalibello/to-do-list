@@ -85,6 +85,7 @@ After you're finished please remove all the comments and instructions!
 - **[webpack is used for the implementation]**
 - **[and and remove items from the to-do list]**
 - **[mark an item as completed for deletion]**
+- **[The javascript code is split into modules]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -178,7 +179,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add a clear all button to delete all selected items marked as complete]**
+- [ ] **[Add more styling to the webpage to make it look more attractive]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
