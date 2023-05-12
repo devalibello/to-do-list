@@ -1,4 +1,4 @@
-// import './style.css';
+import './style.css';
 
 const toDoContainer = document.getElementById('todolist');
 const itemInput = document.getElementById('input-item');
@@ -21,7 +21,7 @@ class Books {
     <div class="list-items">
         <input type="checkbox" name="item" class="check-for-items" id="${this.toDoTasks[i].index}" onchange='ticked(${this.toDoTasks[i].index})'>
         <input type="text" value="${this.toDoTasks[i].description}" class="todo-item-text">
-        <i class='material-icons delete-btn' onclick="books.remove(${this.toDoTasks[i].index})">delete</i>
+        <i class='material-icons delete-btn' onclick="removeItem(${this.toDoTasks[i].index})">delete</i>
     </div>`;
       }
     }
@@ -74,3 +74,7 @@ window.ticked = (index) => {
   books.toDoTasks[index - 1].completed = !books.toDoTasks[index - 1].completed;
   books.saveToDoList();
 };
+
+window.removeItem = (index) => {
+  books.remove(index);
+  };
